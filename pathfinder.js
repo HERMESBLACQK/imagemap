@@ -290,7 +290,6 @@ function updateHTMLPosition() {
     element.style.top = htmlY + 'px';
     // element.style.transform = `translate(${htmlX}px, ${htmlY}px)`;
 
-}
 
 
 
@@ -437,4 +436,3 @@ if ('serviceWorker' in navigator) {
     });
   }
 
-*/ 
