@@ -9,7 +9,7 @@ const screenWidth =
 //     ).style.display = 'none'
 // })
 
-console.log(graphs);
+// console.log(graphs);
 const coordinatesElement = document.querySelector(".coordinates");
 let start, end;
 let graph;
@@ -37,7 +37,7 @@ function getOffices(startPoint, endPoint) {
                 const { x, y } = office[startPoint].coordinates;
                 startAxis = office[startPoint].axis;
                 start = [x, y];
-                // console.log("Coordinates:", start, startAxis);
+                console.log("Coordinates:", startAxis);
             }
             // Extract office key and coordinates for end point
             if (office.hasOwnProperty(endPoint)) {
@@ -45,7 +45,7 @@ function getOffices(startPoint, endPoint) {
                 const { x, y } = office[endPoint].coordinates;
                 endAxis = office[endPoint].axis;
                 end = [x, y];
-                // console.log("Coordinates:", end, endAxis);
+                console.log("Coordinates:", endAxis);
             }
         });
         //Find the line that has the start and end offices mapped to it.
